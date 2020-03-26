@@ -1,6 +1,4 @@
 *{
-    
-    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -8,23 +6,21 @@ html{
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
     background-color: #000000dc;
-
     margin: 0;
-    
     padding: 0;
+    box-sizing: border-box;
 }
-.header{
+.container-header{
     color: #ffffff;
     text-align: center;
     padding-top: 5%;
+    background: url("img/fundo-menu.jpg") center;
+    background-size: cover;
+    padding-bottom: 10%; 
+    box-sizing: border-box;
 }
 .logo-img{
     max-width: 100px;
-}
-#img{
-    background: url("img/fundo-menu.jpg") center;
-    background-size: cover;
-    padding-bottom: 10%;            
 }
 .menu ul{
     padding-top: 80px;
@@ -38,6 +34,87 @@ html{
     color: #ffffff;
     text-decoration: none;
 }
+main{
+    box-sizing:border-box
+}
+.container-slide{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.slide{
+    display: none;
+}
+.anterior, .proximo{
+    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.proximo{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.anterior:houver, .proximo:houver{
+    background-color: rgba(185, 185, 185, 0.8);
+}
+.numbertext {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+ }
+ .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+} 
+.cardapio img{
+    margin: 3% 3%;
+    max-height: 550px;
+}
+.contato ul{
+    display: grid;
+}
+.contato ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+.contato ul li img{
+    max-height: 64px;
+}
 main ul{
     list-style: none;
     display: inline-flex;
@@ -49,6 +126,12 @@ main ul{
 #menu-text{
     text-align: center;
     padding: 5% 15%;    
+}
+#menu-img img{
+    max-height: 250px;
+    height: auto;
+    width: auto;
+    box-sizing: border-box;
 }
 .main-footer{
     text-align: justify;
@@ -64,4 +147,12 @@ main ul{
     text-decoration: none;
     color: #636363;
 
+}
+@media screen and (max-width: 1128px) {
+    .container {
+       padding: 0 2.4em 0 2.4em;
+    }
+    .container-main{
+        padding: 0;
+    }
 }
