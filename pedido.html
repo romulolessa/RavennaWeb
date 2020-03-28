@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="template.css">
+    <link rel="icon" href="img/logo-ravenna.png" type="image/x-icon">
+    <title>Ravenna Pizza Club</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="img/logo-ravenna.png" alt="Logo Ravenna">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./cardapio.html">Cardapio</a></li>
+                    <li><a href="./pedido.html">Pedido</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="formContainer">
+            <section>
+                <form action="">
+                    <input id="name" name="name" type="text" placeholder="Nome:">
+                    <input id="telefone" name="telefone" type="tel" placeholder="Telefone:">
+                    <input id="endereco" name="endereco" type="text" placeholder="Endereço:">
+                    <input id="referencia" name="referencia" type="text" placeholder="Referencia do endereço:">
+                    <select name="place">
+                        <option value="din-s">Dinheiro sem troco</option>
+                        <option value="din-s">Dinheiro com troco</option>
+                        <option value="din-s">Cartão de Debito </option>
+                        <option value="din-s">Cartão de Credito</option>
+                    </select>
+                    <input name="troco" id="troco" type="number" placeholder="Qts $$ de Troco:">
+                    <input type="submit" value="Faça seu Pedido!">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="footerLoja">
+                <h3>Informações</h3>
+                <p>Seg, Qua e Qui: 18:00 ate 00:00</p>
+                <p>Sex, Sab e Dom: 18:00 ate 01:00</p>
+                <p>Av Leandro da Mota, 799, Duque de Caxias/RJ</p>
+            </div>
+            <div class="dev">
+                <p>
+                    Desenvolvido por <a href="">Romulo Lessa</a> |
+                    direitos de imagem <a href="">freepik</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
