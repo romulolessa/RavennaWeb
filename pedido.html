@@ -27,11 +27,43 @@
                     <input id="telefone" name="telefone" type="tel" placeholder="Telefone:">
                     <input id="endereco" name="endereco" type="text" placeholder="Endereço:">
                     <input id="referencia" name="referencia" type="text" placeholder="Referencia do endereço:">
-                    <select name="place">
+                    
+                    <select name="pizzas">
+                        <optgroup label="Tradicional">
+                        <option value="">Mussarella</option>
+                        <option value="">Presunto</option>
+                        <option value="">Calabresa</option>
+                        <option value="">Portuguesa</option>
+                        <option value=""> Frango com Catupiry</option>
+                        <option value="">Margerita</option>
+                        <option value="">Quatro Queijos</option>
+                        <option value="">Alho</option>
+                        </optgroup>
+                        <optgroup label="Especial">
+                        <option value="">Bacon c/ Ovos</option>
+                        <option value="">Bacon c/ Cheddar</option>
+                        <option value="">Lombo Canadese</option>
+                        <option value="">Peito de Peru com Queijo Minas</option>
+                        <option value="">Carne seca c/ Catupiry</option>
+                        <option value="">Pepperone</option>
+                        </optgroup>
+                        <optgroup label="Premium">
+                            <option value="">Ravenna</option>
+                            <option value="">Camarão ao Molho de Catupiry</option>
+                            <option value="">Toscana</option>
+                            <option value="">Nutella c/ Morango</option>=
+                        </optgroup>
+                        <optgroup label="Especial">
+                            <option value="">Beijinho</option>
+                            <option value="">Banana c/ Canela</option>
+                            <option value="">Brigadeiro</option>
+                        </optgroup>
+                    </select>
+                    <select name="Pagamento">
                         <option value="din-s">Dinheiro sem troco</option>
-                        <option value="din-s">Dinheiro com troco</option>
-                        <option value="din-s">Cartão de Debito </option>
-                        <option value="din-s">Cartão de Credito</option>
+                        <option value="din-c">Dinheiro com troco</option>
+                        <option value="deb">Cartão de Debito </option>
+                        <option value="cred">Cartão de Credito</option>
                     </select>
                     <input name="troco" id="troco" type="number" placeholder="Qts $$ de Troco:">
                     <input type="submit" value="Faça seu Pedido!">
